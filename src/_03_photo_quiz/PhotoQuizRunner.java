@@ -4,7 +4,6 @@ package _03_photo_quiz;
  *    Level 1
  */
 
-
 public class PhotoQuizRunner {
 	public static void main(String[] args) throws Exception {
 		new PhotoQuiz().run();

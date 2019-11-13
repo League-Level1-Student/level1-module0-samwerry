@@ -5,7 +5,7 @@ package _04_drum_kit;
  */
 
 public class DrumKitRunner {
-    public static void main(String[] args) throws Exception {
-    	new DrumKit().run();
-    }
+	public static void main(String[] args) throws Exception {
+		new DrumKit().run();
+	}
 }

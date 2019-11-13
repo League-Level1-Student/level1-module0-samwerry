@@ -21,7 +21,6 @@ public class JackInTheBox implements ActionListener {
 		JFrame frame = new JFrame();
 		frame.setVisible(true);
 
-		
 		frame.add(button);
 		frame.pack();
 		button.setText("Surprise!");

@@ -26,46 +26,45 @@ public class PhotoQuiz {
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
 		// “Copy Image Address”)
-String skadoosh = "https://art.ngfiles.com/images/619000/619802_groanaplays_skadoosh.png?f1529469152";
+		String skadoosh = "https://art.ngfiles.com/images/619000/619802_groanaplays_skadoosh.png?f1529469152";
 		// 2. create a variable of type "Component" that will hold your image
-Component image;
+		Component image;
 		// 3. use the "createImage()" method below to initialize your Component
-image = createImage(skadoosh);
+		image = createImage(skadoosh);
 		// 4. add the image to the quiz window
-quizWindow.add(image);
+		quizWindow.add(image);
 		// 5. call the pack() method on the quiz window
-quizWindow.pack();
+		quizWindow.pack();
 		// 6. ask a question that relates to the image
-String thanos = JOptionPane.showInputDialog("Will Po defeat thanos");
+		String thanos = JOptionPane.showInputDialog("Will Po defeat thanos");
 		// 7. print "CORRECT" if the user gave the right answer
-if(thanos.equals("yes")) {
-	System.out.println("CORRECT");
-}
+		if (thanos.equals("yes")) {
+			System.out.println("CORRECT");
+		}
 		// 8. print "INCORRECT" if the answer is wrong
-else {
-	System.out.println("INCORRECT");
-}
+		else {
+			System.out.println("INCORRECT");
+		}
 		// 9. remove the component from the quiz window (you may not see the
 		// effect of this until step 12)
-quizWindow.remove(image);
+		quizWindow.remove(image);
 		// 10. find another image and create it (might take more than one line
 		// of code)
-String mtb = "https://i0.wp.com/www.bikemag.com/wp-content/uploads/2017/02/2017-Intense-Tracer-27.5-5488.jpg?resize=970%2C546&ssl=1";
-Component pic;
-pic = createImage(mtb);
+		String mtb = "https://i0.wp.com/www.bikemag.com/wp-content/uploads/2017/02/2017-Intense-Tracer-27.5-5488.jpg?resize=970%2C546&ssl=1";
+		Component pic;
+		pic = createImage(mtb);
 		// 11. add the second image to the quiz window
-quizWindow.add(pic);
+		quizWindow.add(pic);
 		// 12. pack the quiz window
-quizWindow.pack();
+		quizWindow.pack();
 		// 13. ask another question
-String bike = JOptionPane.showInputDialog("Is this bike insane?");
+		String bike = JOptionPane.showInputDialog("Is this bike insane?");
 		// 14+ check answer, say if correct or incorrect, etc.
-if(bike.equals("yes")) {
-	System.out.println("CORRECT ITS RAD");
-}
-else {
-	System.out.println("YOUR WRONG ITS INSANE");
-}
+		if (bike.equals("yes")) {
+			System.out.println("CORRECT ITS RAD");
+		} else {
+			System.out.println("YOUR WRONG ITS INSANE");
+		}
 	}
 
 	private Component createImage(String imageUrl) throws MalformedURLException {
